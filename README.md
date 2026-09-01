@@ -23,8 +23,23 @@ python main.py
 
 ## Discount Table
 
- Subtotal               Discount
- Less than $100            0%
- $100 - $199.99            5%
- $200 - $499.99            10%
- $500 or more              15%
+| Subtotal | Discount |
+|---|---:|
+| Less than $100 | 0% |
+| $100 - $199.99 | 5% |
+| $200 - $499.99 | 10% |
+| $500 or more | 15% |
+
+
+ ## Testing and Verification
+
+The application was tested by running `main.py` and verifying:
+
+- Products can be added and displayed.
+- Products can be searched by category.
+- Products can be removed from inventory.
+- Orders are created successfully.
+- Discounts are calculated correctly.
+- Stock is reduced after an order.
+- Invalid products and insufficient stock are handled with errors.
+- Inventory can be saved to and loaded from a JSON file.
