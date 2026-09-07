@@ -52,11 +52,11 @@ class OrderProcessor:
     def calculate_discount(self, subtotal):
         if subtotal < 100:
             return 0
-
-        if subtotal < 500:
+    
+        if subtotal < 200:
             return subtotal * 0.05
-
-        if subtotal < 1000:
+    
+        if subtotal < 500:
             return subtotal * 0.10
-
+    
         return subtotal * 0.15
